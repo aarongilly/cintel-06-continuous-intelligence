@@ -1,8 +1,8 @@
 """
-continuous_intelligence_case.py - Project script (example).
+continuous_intelligence_gillespie.py - Project script
 
-Author: Denise Case
-Date: 2026-03
+Author: Aaron Gillespie
+Date: 2026-04
 
 System Metrics Data
 
@@ -38,12 +38,7 @@ Paths (relative to repo root)
 
 Terminal command to run this file from the root project folder
 
-    uv run python -m cintel.continuous_intelligence_case
-
-OBS:
-  Don't edit this file - it should remain a working example.
-  Use as much of this code as you can when creating your own pipeline script,
-  and change the logic to match the needs of your project.
+    uv run python -m cintel.continuous_intelligence_gillespie
 """
 
 # === DECLARE IMPORTS ===
