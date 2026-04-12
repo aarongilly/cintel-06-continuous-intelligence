@@ -168,14 +168,14 @@ def main() -> None:
         return col > MAX_AVG_LATENCY
 
     summary_df = summary_df.with_columns(
-    pl.when(
-        is_error_rate_high(pl.col("avg_error_rate")) |
-        is_latency_high(pl.col("avg_latency_ms"))
+        pl.when(
+            is_error_rate_high(pl.col("avg_error_rate"))
+            | is_latency_high(pl.col("avg_latency_ms"))
+        )
+        .then(pl.lit("DEGRADED"))
+        .otherwise(pl.lit("STABLE"))
+        .alias("system_state")
     )
-    .then(pl.lit("DEGRADED"))
-    .otherwise(pl.lit("STABLE"))
-    .alias("system_state")
-)
 
     LOG.info("STEP 4. System assessment completed")
 

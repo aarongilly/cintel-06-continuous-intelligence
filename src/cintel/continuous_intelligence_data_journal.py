@@ -156,7 +156,13 @@ def main() -> None:
             (
                 # To avoid division by zero, only calculate the ratio when there is at least some other media consumption.
                 pl.when(
-                    (pl.col("book") + pl.col("tv") + pl.col("movie") + pl.col("videogame")) > 0
+                    (
+                        pl.col("book")
+                        + pl.col("tv")
+                        + pl.col("movie")
+                        + pl.col("videogame")
+                    )
+                    > 0
                 )
                 .then(
                     pl.col("youtube")
@@ -265,7 +271,9 @@ def main() -> None:
             pl.col("workouts").mean().alias("avg_workouts"),
             pl.col("youtube").mean().alias("avg_youtube"),
             pl.col("other_media").mean().alias("avg_other_media"),
-            pl.col("youtube_to_other_media_ratio").mean().alias("avg_youtube_to_other_media_ratio"),
+            pl.col("youtube_to_other_media_ratio")
+            .mean()
+            .alias("avg_youtube_to_other_media_ratio"),
         ]
     )
 
