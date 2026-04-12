@@ -1,0 +1,86 @@
+# ============================================================
+# .github/workflows/deploy-docker.yml (Deploy Docker)
+# ============================================================
+# WHY-FILE: Build and run Docker container on pushes to main.
+# REQ: Dockerfile in repo root with correct build instructions.
+
+name: Docker Container and Quality Checks
+
+on:
+  push:
+    branches: [main] # WHY: Run when pushing to main branch.
+  workflow_dispatch: # WHY: Allow manual triggering from Actions tab.
+
+env:
+  PYTHONUNBUFFERED: "1" # WHY: Real-time logging.
+  PYTHONIOENCODING: "utf-8" # WHY: Ensure UTF-8 encoding for international characters.
+
+jobs:
+
+  # === JOB 1: PRE-COMMIT CHECKS: Run pre-commit hooks to ensure code quality before building Docker image. ===
+
+  docker-precommit:
+    name: Run Docker pre-commit
+    runs-on: ubuntu-latest
+
+    steps:
+      # ============================================================
+      # ASSEMBLE: Get code and set up environment
+      # ============================================================
+
+      - name: Job 1 A1) Checkout repository code
+        # WHY: Needed to access files for checks.
+        uses: actions/checkout@v6
+
+      - name: Job 1 A2) Install uv (with caching and uv.lock awareness)
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true # WHY: Speed up installs on subsequent runs
+          cache-dependency-glob: "uv.lock" # WHY: Only re-cache when dependencies change
+
+      - name: Job 1 A3) Install Python 3.14 (no repo changes needed)
+        run: uv python install 3.14
+
+      - name: Job 1 A4) Sync to install all dependencies
+        run: uv sync --extra dev --extra docs --upgrade
+
+      - name: Job 1 A5)Run pre-commit on all files
+        run: uvx pre-commit run --all-files
+
+  # === JOB 2: DOCKER BUILD: Build Docker image. Depends on pre-commit checks passing. ===
+
+  docker-build:
+    name: Build Docker image
+    runs-on: ubuntu-latest
+    needs: docker-precommit
+
+    steps:
+
+      # ============================================================
+      # ASSEMBLE: Get code and build Docker image
+      # ============================================================
+
+      - name: Job 2 A1) Checkout repository code
+        # WHY: Needed to access files for checks.
+        uses: actions/checkout@v6
+
+      - name: Job 2 A2) Build Docker image
+        run: docker build -t cintel-continuous-intelligence .
+
+  # === JOB 3: DOCKER RUN: Run the built Docker container to ensure it starts correctly. Depends on successful build. ===
+
+  docker-run:
+    name: Run project in container
+    runs-on: ubuntu-latest
+    needs: docker-build
+
+    steps:
+      - name: Job 3 A1) Checkout repository code
+        # WHY: Needed to access files for checks.
+        uses: actions/checkout@v6
+
+      - name: Job 3 A2) Build Docker image
+        run: docker build -t cintel-continuous-intelligence .
+
+      - name: Job 3 A3) Run project
+        run: docker run --rm cintel-continuous-intelligence
