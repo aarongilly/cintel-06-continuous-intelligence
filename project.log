@@ -25,3 +25,84 @@
 2026-04-12 13:48:54 | INFO | P6 | Pipeline executed successfully!
 2026-04-12 13:48:54 | INFO | P6 | ========================
 2026-04-12 13:48:54 | INFO | P6 | END main()
+2026-04-12 13:56:49 | INFO | P6 | === RUN START ===
+2026-04-12 13:56:49 | INFO | P6 | project=CINTEL
+2026-04-12 13:56:49 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-12 13:56:49 | INFO | P6 | python=3.14.3
+2026-04-12 13:56:49 | INFO | P6 | os=Darwin 25.3.0
+2026-04-12 13:56:49 | INFO | P6 | shell=zsh
+2026-04-12 13:56:49 | INFO | P6 | cwd=.
+2026-04-12 13:56:49 | INFO | P6 | github_actions=False
+2026-04-12 13:56:49 | INFO | P6 | ========================
+2026-04-12 13:56:49 | INFO | P6 | START main()
+2026-04-12 13:56:49 | INFO | P6 | ========================
+2026-04-12 13:56:49 | INFO | P6 | ROOT_DIR = .
+2026-04-12 13:56:49 | INFO | P6 | DATA_FILE = data/system_metrics_case.csv
+2026-04-12 13:56:49 | INFO | P6 | OUTPUT_FILE = artifacts/system_assessment_case.csv
+2026-04-12 13:56:49 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-12 13:56:49 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-12 13:56:49 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-12 13:56:49 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-12 13:56:49 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-12 13:56:49 | INFO | P6 | STEP 3. Anomalies detected: 7
+2026-04-12 13:56:49 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-12 13:56:49 | INFO | P6 | STEP 4. System assessment completed
+2026-04-12 13:56:49 | INFO | P6 | STEP 5. Wrote system assessment file: /Users/aaron/Documents/Git_Repos/GradSchool/44630/cintel-06-continuous-intelligence/artifacts/system_assessment_case.csv
+2026-04-12 13:56:49 | INFO | P6 | ========================
+2026-04-12 13:56:49 | INFO | P6 | Pipeline executed successfully!
+2026-04-12 13:56:49 | INFO | P6 | ========================
+2026-04-12 13:56:49 | INFO | P6 | END main()
+2026-04-12 14:08:47 | INFO | P6 | === RUN START ===
+2026-04-12 14:08:47 | INFO | P6 | project=CINTEL
+2026-04-12 14:08:47 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-12 14:08:47 | INFO | P6 | python=3.14.3
+2026-04-12 14:08:47 | INFO | P6 | os=Darwin 25.3.0
+2026-04-12 14:08:47 | INFO | P6 | shell=zsh
+2026-04-12 14:08:47 | INFO | P6 | cwd=.
+2026-04-12 14:08:47 | INFO | P6 | github_actions=False
+2026-04-12 14:08:47 | INFO | P6 | ========================
+2026-04-12 14:08:47 | INFO | P6 | START main()
+2026-04-12 14:08:47 | INFO | P6 | ========================
+2026-04-12 14:08:47 | INFO | P6 | ROOT_DIR = .
+2026-04-12 14:08:47 | INFO | P6 | DATA_FILE = data/system_metrics_case.csv
+2026-04-12 14:08:47 | INFO | P6 | OUTPUT_FILE = artifacts/system_assessment_case.csv
+2026-04-12 14:08:47 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-12 14:08:48 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-12 14:08:48 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-12 14:08:48 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-12 14:08:48 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-12 14:08:48 | INFO | P6 | STEP 3. Anomalies detected: 7
+2026-04-12 14:08:48 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-12 14:08:48 | INFO | P6 | STEP 4. System assessment completed
+2026-04-12 14:08:48 | INFO | P6 | STEP 5. Wrote system assessment file: /Users/aaron/Documents/Git_Repos/GradSchool/44630/cintel-06-continuous-intelligence/artifacts/system_assessment_case.csv
+2026-04-12 14:08:48 | INFO | P6 | ========================
+2026-04-12 14:08:48 | INFO | P6 | Pipeline executed successfully!
+2026-04-12 14:08:48 | INFO | P6 | ========================
+2026-04-12 14:08:48 | INFO | P6 | END main()
+2026-04-12 14:09:05 | INFO | P6 | === RUN START ===
+2026-04-12 14:09:05 | INFO | P6 | project=CINTEL
+2026-04-12 14:09:05 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-12 14:09:05 | INFO | P6 | python=3.14.3
+2026-04-12 14:09:05 | INFO | P6 | os=Darwin 25.3.0
+2026-04-12 14:09:05 | INFO | P6 | shell=zsh
+2026-04-12 14:09:05 | INFO | P6 | cwd=.
+2026-04-12 14:09:05 | INFO | P6 | github_actions=False
+2026-04-12 14:09:05 | INFO | P6 | ========================
+2026-04-12 14:09:05 | INFO | P6 | START main()
+2026-04-12 14:09:05 | INFO | P6 | ========================
+2026-04-12 14:09:05 | INFO | P6 | ROOT_DIR = .
+2026-04-12 14:09:05 | INFO | P6 | DATA_FILE = data/system_metrics_case.csv
+2026-04-12 14:09:05 | INFO | P6 | OUTPUT_FILE = artifacts/system_assessment_gillespie.csv
+2026-04-12 14:09:05 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-12 14:09:05 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-12 14:09:05 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-12 14:09:05 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-12 14:09:05 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-12 14:09:05 | INFO | P6 | STEP 3. Anomalies detected: 7
+2026-04-12 14:09:05 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-12 14:09:05 | INFO | P6 | STEP 4. System assessment completed
+2026-04-12 14:09:05 | INFO | P6 | STEP 5. Wrote system assessment file: /Users/aaron/Documents/Git_Repos/GradSchool/44630/cintel-06-continuous-intelligence/artifacts/system_assessment_gillespie.csv
+2026-04-12 14:09:05 | INFO | P6 | ========================
+2026-04-12 14:09:05 | INFO | P6 | Pipeline executed successfully!
+2026-04-12 14:09:05 | INFO | P6 | ========================
+2026-04-12 14:09:05 | INFO | P6 | END main()
