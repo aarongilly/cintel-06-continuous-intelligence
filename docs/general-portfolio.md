@@ -42,9 +42,7 @@ This is a project I'd deeply like to pick back up on.
 
 There's other stuff.
 
-- I made two plugins for Obsidian
-  - [Semantic Canvas](obsidian://show-plugin?id=semantic-canvas)
-  - [Auto-properties](https://github.com/aarongilly/obsidian-auto-properties) *(still pending approval to the Obsidian Community Plug-ins list)*
+- I made two plugins for Obsidian: [Semantic Canvas](obsidian://show-plugin?id=semantic-canvas) & [Auto-properties](https://github.com/aarongilly/obsidian-auto-properties) *(still pending approval to the Obsidian Community Plug-ins list)*
 - I build things with my hands.
 - I do some drawing from time to time.
 - I make a somewhat ridiculous number of diagrams for very little reason.
