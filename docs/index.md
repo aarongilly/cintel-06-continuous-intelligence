@@ -43,12 +43,7 @@ My Data Journal is functioning optimally – which is good because otherwise I w
 
 My personal behavior is good, less the YouTube. YouTube is a double-edged sword. It provides great value, but also can be a mindless time-suck. It's changed all of our lives, partly for the better, and partly for the worse.
 
-## Project Documentation Pages (docs/)
+## Other Pages
 
-- **Home** - this documentation landing page
-- **Project Instructions** - instructions specific to this module
-- **Glossary** - project terms and concepts
-
-## Additional Resources
-
-- [Suggested Datasets](https://denisecase.github.io/pro-analytics-02/reference/datasets/cintel/)
+- **[CI Portfolio](./ci-portfolio.md)** - my portfolio for CSIS 44630
+- **[General Portfolio](./general-portfolio.md)** - the other things I do
