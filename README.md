@@ -7,6 +7,9 @@
 
 > Professional Python project for continuous intelligence.
 
+> [!NOTE]
+> The main documentation for this project is [here](https://aarongilly.github.io/cintel-06-continuous-intelligence/), not this README.
+
 Continuous intelligence systems monitor data streams, detect change, and respond in real time.
 This course builds those capabilities through working projects.
 

@@ -1,9 +1,6 @@
-# Continuous Intelligence
+# Continuous Intelligence - Data Journal & Aaron Behavioral Health Tracking
 
-This site provides documentation for this project.
-Use the navigation to explore module-specific materials.
-
-## Custom Project - Data Journal & Aaron Behavioral Health Tracking
+This site provides documentation for this project – the final project of my Continuous Intelligence class through NW Missouri St University (CSIS 44630).
 
 ### Dataset
 
@@ -38,7 +35,7 @@ On the whole:
 - The Aaron behavioral health is... okay
   - If you take out YouTube it's pretty good!
 
-Fun (maybe?) fact: per [my capstone project Juypter Notebook](https://github.com/aarongilly/csis_capstone/blob/main/notebook.ipynb), YouTube video view count is the 2nd strongest predictor of having "good" days.
+Fun (maybe?) fact: per [my capstone project Juypter Notebook](https://github.com/aarongilly/csis_capstone/blob/main/notebook.ipynb), YouTube video view count is the 2nd strongest predictor of having "good" days. Less YouTube = better.
 
 ### Interpretation
 
